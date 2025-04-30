@@ -1,0 +1,369 @@
+/* Base générale */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0e0e0e;
+    color: #f0f0f0;
+    line-height: 1.6;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #222;
+  }
+  
+  nav a {
+    color: #00ffd1;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffffff;
+  }
+  
+  .nav-left a {
+    font-size: 1.3rem;
+    color: #00ffd1;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-left a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #00ffd1;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-left a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  
+  .nav-left a:hover::after {
+    width: 100%;
+  }
+  
+  
+  /* En-tête */
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(120deg, #111, #1a1a1a);
+    border-bottom: 1px solid #222;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    color: #ccc;
+    font-style: italic;
+  }
+  
+  /* Section */
+  section {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  h2 {
+    border-left: 5px solid #00ffd1;
+    padding-left: 0.75rem;
+    margin-top: 2rem;
+    color: #00ffd1;
+  }
+  
+  /* Carte (cards) */
+  .card {
+    background-color: #1a1a1a;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 3px solid #00ffd1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #fff;
+  }
+  
+  .card p, .card li {
+    color: #ccc;
+  }
+  
+  .card ul {
+    padding-left: 1.25rem;
+  }
+  
+  .portfolio-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .portfolio-section ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-right {
+      margin-top: 1rem;
+    }
+  
+    .links {
+      flex-direction: column;
+    }
+  }
+  
+  .identity {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .pseudo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+  }
+  
+  .link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .link-list a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    position: relative;
+    transition: color 0.2s ease;
+  }
+  
+  .link-list a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1px;
+    width: 0%;
+    background-color: #bbb;
+    transition: width 0.3s ease;
+  }
+  
+  .link-list a:hover {
+    color: #fff;
+  }
+  
+  .link-list a:hover::after {
+    width: 100%;
+  }
+  
+  .pseudo {
+    font-size: 2rem;           /* taille augmentée */
+    font-weight: bold;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    text-transform: uppercase; /* majuscules */
+    letter-spacing: 2px;       /* espacement stylé */
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto;
+    text-align: center;
+    background-color: #111;
+    color: #888;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  footer p:last-child {
+    font-style: italic;
+    font-size: 0.85rem;
+  }
+  
+  #categories {
+    margin: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #e0e0e0;
+  }
+  
+  .folder {
+    background-color: #222; /* Fond de dossier plus sobre */
+    border-radius: 10px;     /* Bords arrondis */
+    padding: 1rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre discrète pour effet de profondeur */
+  }
+  
+  .folder h2 {
+    font-size: 1.5rem;
+    color: #00ffd1; /* Couleur du texte du dossier */
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .folder h2::before {
+    content: '📂'; /* Icône de dossier */
+    margin-right: 0.5rem;
+  }
+  
+  .folder ul {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .folder ul li {
+    margin: 0.5rem 0;
+  }
+  
+  .folder ul li a {
+    color: #bbb; /* Couleur des liens plus douce */
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 0.4rem 0;
+    transition: all 0.3s ease-in-out; /* Effet de transition fluide */
+  }
+  
+  .folder ul li a:hover {
+    color: #fff; /* Changer la couleur des liens au survol */
+    background-color: #444; /* Fond de lien au survol */
+    padding-left: 10px; /* Légère animation de décalage */
+    cursor: pointer; /* Change le curseur pour indiquer l'interactivité */
+  }
+  
+  .folder ul li a:focus {
+    outline: none; /* Supprime l'effet de focus par défaut */
+    box-shadow: 0 0 0 2px #00ffd1; /* Effet de focus élégant avec une bordure lumineuse */
+  }
+
+  /* Style pour la barre de navigation */
+nav {
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.nav-left a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.nav-right input {
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+  width: 200px;
+}
+
+.nav-right input::placeholder {
+  color: #bbb;
+}
+
+
+/* Style pour la barre de navigation */
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  .nav-left a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .nav-right input {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333;
+    width: 200px;
+  }
+  
+  .nav-right input::placeholder {
+    color: #bbb;
+  }
