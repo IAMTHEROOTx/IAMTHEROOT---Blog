@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OverTheWire - Natas</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      color: #00ffd1;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      color: #888;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    pre {
+      background: #111;
+      color: #0f0;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    a.ctf-link {
+      display: inline-block;
+      color: #00ffd1;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 2rem;
+    }
+
+    a.ctf-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">IAMTHEROOT</a>
+    </div>
+    <div class="nav-right">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="categories.html">Catégories</a>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+    <h1>OverTheWire - Natas Level 0</h1>
+    <div class="meta">Type : Write-up | Date : Février 2025</div>
+
+    <a href="https://overthewire.org/wargames/natas/natas0.html" class="ctf-link" target="_blank">Voir le challenge</a>
+
+    <p>Ce challenge consistait à trouver un flag dans une application web.</p>
+    <p>Ainsi ce challenge nous introduit à ce qui se passe derrière une application web mais pas trop profondément.</p>
+
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\natas0\Capture d'écran 2025-04-30 154411.png" alt="Capture d'écran de l'analyse">
+
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\natas0\Capture d'écran 2025-04-30 154420.png" alt="Capture d'écran de l'analyse">
+    <p>Ici le site web nous dit qu'on ne trouvera pas le mot de passe.</p>
+    <p>Ce que j'ai fait j'ai afficher le code source de la page web et Tadam...</p>
+
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\natas0\Capture d'écran 2025-04-30 154434.png" alt="Capture d'écran de l'analyse">
+
+    <!-- <pre>
+def xor_decrypt(data, key):
+    return bytes([b ^ key[i % len(key)] for i, b in enumerate(data)])
+    </pre> -->
+
+    <!-- <p>Une fois déchiffré, le flag était contenu dans un bloc lisible : <strong>FCSC{custom_crypto_can_be_fun}</strong></p> -->
+
+    <!-- <img src="screenshots/flag-decrypted.png" alt="Flag trouvé"> -->
+  </main>
+
+</body>
+</html>
