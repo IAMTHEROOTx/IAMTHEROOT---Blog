@@ -5,7 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio – iamtheroot</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body.portfolio-page {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+    }
+
+    h2 {
+      color: #00ffd1;
+      margin-top: 2rem;
+      border-left: 4px solid #00ffd1;
+      padding-left: 0.75rem;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    section p {
+      margin: 0.25rem 0 0.5rem;
+    }
+
+    .portfolio-header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(120deg, #111, #1a1a1a);
+      border-bottom: 1px solid #222;
+    }
+
+    .portfolio-container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .portfolio-section {
+      margin-bottom: 3rem;
+    }
+
+    a {
+      color: #00ffd1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body class="portfolio-page">
 
   <!-- Barre de navigation -->
@@ -19,39 +74,78 @@
     </div>
   </nav>
 
-  <!-- En-tête du portfolio -->
+  <!-- En-tête -->
   <header class="portfolio-header">
-    <h1>Portfolio</h1>
-    <p>Jeune étudiant en cybersécurité à l'école 2600, passionné de sécurité offensive et de challenges techniques.</p>
+    <h1>Mon Portfolio</h1>
+    <p>Étudiant en cybersécurité à l'école 2600, passionné de sécurité offensive et de challenges techniques.</p>
   </header>
 
   <!-- Contenu principal -->
-  <main class="portfolio-container" style="font-size: 1.15rem; line-height: 1.8;">
+  <main class="portfolio-container">
 
     <section class="portfolio-section" id="formation">
       <h2>Formation</h2>
-      <ul>
-        <li><strong>Expert en Sécurité des Données, Réseaux & Systèmes</strong> – École 2600, Paris (2025 – 2028)</li>
-        <li><strong>BTS Cybersécurité, Informatique & Réseaux</strong> – Lycée Chevalier de Saint-Georges, Guadeloupe (2023 – 2025)</li>
-      </ul>
-    </section>
+    
+      <div class="formation-bloc">
+        <div class="formation-header">
+          <a href="https://www.2600.eu/" target="_blank">
+            <img src="ecole2600_logo.jpg" alt="École 2600" class="logo-2600" />
+          </a>
+          <div>
+            <h3>Expert en Sécurité des Données, Réseaux & Systèmes</h3>
+            <p>École 2600, Paris (2025 – 2028)</p>
+          </div>
+        </div>
+    
+        <h4>Modules clés :</h4>
+        <ul>
+          <li><strong>Gouvernance :</strong> politiques de sécurité, évaluation des risques, conformité, conseil</li>
+          <li><strong>Blue Team :</strong> défense, détection, réponses aux incidents, confidentialité</li>
+          <li><strong>Red Team :</strong> pentesting, simulations d’attaque, évaluation de sécurité</li>
+          <li><strong>Purple Team :</strong> synergie Red/Blue, automatisation de détection, tests continus</li>
+          <li><strong>Menaces & Investigations :</strong> CTI, analyse des menaces, décisions stratégiques</li>
+        </ul>
+      </div>
+    
+      <div class="formation-bloc">
+        <h3>BTS Cybersécurité, Informatique & Réseaux</h3>
+        <p>Lycée Chevalier de Saint-Georges, Guadeloupe (2023 – 2025)</p>
+        <ul>
+          <li>Réseaux & Protocoles</li>
+          <li>Programmation C++ / Arduino</li>
+          <li>Mathématiques</li>
+        </ul>
+      </div>
+    
+      <div class="formation-bloc">
+        <h3>Jeune Sapeur-Pompier</h3>
+        <p>SDIS Guadeloupe (2017 – 2021)</p>
+        <ul>
+          <li>PSC1</li>
+          <li>Sauvetage en équipe</li>
+          <li>Incendie</li>
+        </ul>
+      </div>
+    </section>    
 
     <section class="portfolio-section" id="certifications">
       <h2>Certifications</h2>
       <ul>
-        <li>TryHackMe – Jr Penetration Tester</li>
-        <li>TryHackMe – SOC Level 1</li>
-        <li>TryHackMe – Web Fundamentals</li>
         <li>CompTIA Security+ (en cours)</li>
+        <li>TryHackMe – SOC Level 1</li>
+        <li>TryHackMe – Jr Penetration Tester</li>
+        <li>TryHackMe – Web Fundamentals</li>
       </ul>
     </section>
 
     <section class="portfolio-section" id="experience">
       <h2>Expériences professionnelles</h2>
       <ul>
-        <li><strong>Développeur C++ / Arduino</strong> – KOTE PISCINES (01/2025 – 06/2025)</li>
+        <li><strong>Développeur C++ / Arduino</strong> – KOTE PISCINES (01/2025 – 05/2025)</li>
+        <p>Programmation de modules connectés.</p>
+
         <li><strong>Stagiaire Administrateur Informatique</strong> – DGAC (05/2024 – 07/2024)</li>
-        <li><strong>Jeune Sapeur-Pompier</strong> – SDIS Guadeloupe (2017 – 2021)</li>
+        <p>Supervision Linux/Windows, scripts Bash<br>rédaction de procédures<br>sécurité réseau (VPN, VLAN)<br>suivi des incidents.</p>
       </ul>
     </section>
 
@@ -59,15 +153,16 @@
       <h2>Projets</h2>
       <ul>
         <li>Honeypot – Déploiement d’un serveur leurre pour analyse d’intrusions</li>
-        <li>Campagne de Phishing simulée – Sensibilisation & reporting</li>
-        <li>CTF – OverTheWire, TryHackMe, Root-Me</li>
-        <li>Docker – Conteneurisation de services</li>
+        <li>Campagne de phishing simulée – sensibilisation + reporting</li>
+        <li>Pare-feu pfSense – filtrage, NAT, VPN</li>
+        <li>Scripts Python & Bash – automatisation & détection</li>
+        <li>Conteneurisation avec Docker</li>
         <li>Programmation de Switchs ARUBA</li>
       </ul>
     </section>
 
     <section class="portfolio-section" id="liens">
-      <h2>Liens utiles</h2>
+      <h2>Profils et réseaux</h2>
       <ul>
         <li><a href="https://www.linkedin.com/in/nolhan-dupalan/" target="_blank">LinkedIn</a></li>
         <li><a href="https://www.root-me.org/IAMTHEROOT" target="_blank">Root-Me</a></li>
@@ -78,9 +173,8 @@
 
   </main>
 
-  <!-- Pied de page -->
   <footer>
-    <p>© 2025 iamtheroot – Tous droits réservés</p>
+    <p>© 2025 IAMTHEROOT – Tous droits réservés</p>
   </footer>
 
 </body>

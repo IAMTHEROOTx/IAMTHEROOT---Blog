@@ -444,4 +444,29 @@ nav {
     margin: 0.5rem 0 0;
   }
   
-  
+  .formation-bloc {
+  margin-bottom: 2rem;
+}
+
+.formation-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logo-2600 {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo-2600:hover {
+  transform: scale(1.05);
+}
+
+.formation-bloc ul {
+  list-style: disc;
+  padding-left: 2rem;
+}

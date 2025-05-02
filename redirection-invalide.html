@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OverTheWire - Natas</title>
+  <title>Root-me - WEB-SERVEUR</title>
   <link rel="stylesheet" href="style.css">
   <style>
     main {
@@ -73,21 +73,29 @@
 
   <!-- Contenu principal -->
   <main>
-    <h1>OverTheWire - Natas Level 0</h1>
-    <div class="meta">Type : Write-up | Date : Février 2025</div>
+    <h1>Root-me - Redirection-Invalide</h1>
+    <div class="meta">Type : Write-up | Date : Avril 2025</div>
 
-    <a href="https://overthewire.org/wargames/natas/natas0.html" class="ctf-link" target="_blank">Voir le challenge</a>
+    <a href="https://www.root-me.org/fr/Challenges/Web-Serveur/HTTP-Redirection-invalide" class="ctf-link" target="_blank">Voir le challenge</a>
 
     <p>Ce challenge consistait à trouver un flag dans une application web.</p>
-    <p>Ainsi ce challenge nous introduit à ce qui se passe derrière une application web mais pas trop profondément.</p>
 
-    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-30 154411.png" alt="Capture d'écran de l'analyse">
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-25 162835.png" alt="Capture d'écran de l'analyse">
 
-    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-30 154420.png" alt="Capture d'écran de l'analyse">
-    <p>Ici le site web nous dit qu'on ne trouvera pas le mot de passe.</p>
-    <p>Ce que j'ai fait j'ai afficher le code source de la page web et Tadam...</p>
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-25 162919.png" alt="Capture d'écran de l'analyse">
+    <p>Ici le site web nous propose de nous identifier mais nous ne connaissons pas les credentials.<br>Du coup j'ai quand meme tester admin admin mais cela n'a pas fonctionner</p>
+    <p>Vérifier le code source.</p>
+    <p>Ce que j'ai fait j'ai activer mon proxy et ouvert burpsuite</p>
 
-    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-30 154434.png" alt="Capture d'écran de l'analyse">
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-25 162944.png" alt="Capture d'écran de l'analyse">
+
+    <p>J'ai intercepté la requete.<br>Envoyé cette dernière au repeater.</p>
+
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-25 162959.png" alt="Capture d'écran de l'analyse">
+
+    <p>J'ai changé login.php en index.php car n'oublions pas il faut accéder à la page index et le site est sur la page login.Ensuite j'ai renvoyé ma requete et ....</p>
+
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-04-25 163015.png" alt="Capture d'écran de l'analyse">
 
     <!-- <pre>
 def xor_decrypt(data, key):
