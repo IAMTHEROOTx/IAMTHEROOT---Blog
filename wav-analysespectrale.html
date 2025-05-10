@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Root-me - Steganography</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      color: #00ffd1;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      color: #888;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    pre {
+      background: #111;
+      color: #0f0;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    a.ctf-link {
+      display: inline-block;
+      color: #00ffd1;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 2rem;
+    }
+
+    a.ctf-link:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">IAMTHEROOT</a>
+    </div>
+    <div class="nav-right">
+      <a href="portfolio.html">Portfolio</a>
+      <a href="categories.html">Catégories</a>
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+    <h1>Root-me - WAV - Analyse spcetrale</h1>
+    <div class="meta">Type : Write-up | Date : Mai 2025</div>
+
+    <a href="https://www.root-me.org/fr/Challenges/Steganographie//WAV - Analyse spcetrale" class="ctf-link" target="_blank">Voir le challenge</a>
+
+    <p>Ce challenge consistait à trouver un flag dans un specte audio.</p>
+
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-05-08 122853.png" alt="Capture d'écran de l'analyse">
+
+    <p>Ici challenge tres simple et rapide.<br>Il suffit d'analyser le spectre de l'audio grace à Audacity mais j'avais la flemme.</p>
+    <p>Du coup j'ai juste chercher un site web pour voir le spectre de l'audio</p>
+    <pre>https://www.dcode.fr/analyse-spectrale</pre><br>
+    <p>J'ai upload le .wav et j'ai obtenu le flag</p>
+
+    <img src="C:\Users\Nolhan\Documents\IAMTHEROOTx\IAMTHEROOT - Blog\Capture d'écran 2025-05-08 122917.png" alt="Capture d'écran de l'analyse">
+    <pre>Flag : secret-password</pre>
+
+    <!-- <p>Une fois déchiffré, le flag était contenu dans un bloc lisible : <strong>FCSC{custom_crypto_can_be_fun}</strong></p> -->
+
+    <!-- <img src="screenshots/flag-decrypted.png" alt="Flag trouvé"> -->
+  </main>
+
+  <footer>
+    <p>© 2025 IAMTHEROOT – Tous droits réservés</p>
+  </footer>
+</body>
+</html>
