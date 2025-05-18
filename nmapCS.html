@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cheat Sheet Nmap – iamtheroot</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    code, pre {
+      background: #000000;
+      padding: 0.5rem 1rem;
+      display: block;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+      font-family: monospace;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      color: #ffffff;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">IAMTHEROOT</a>
+    </div>
+    <div class="nav-right">
+      <a href="categories.html">Catégories</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Cheat Sheet – Nmap</h1>
+    <p>Voici les commandes les plus utiles que j'utilise en reconnaissance réseau avec <strong>Nmap</strong>.</p>
+
+    <h2>Scan de base</h2>
+    <pre><code>nmap 192.168.1.1</code></pre>
+
+    <h2>Scan de ports spécifiques</h2>
+    <pre><code>nmap -p 22,80,443 192.168.1.1</code></pre>
+
+    <h2>Scan de tous les ports</h2>
+    <pre><code>nmap -p- 192.168.1.1</code></pre>
+
+    <h2>Scan avec détection de services</h2>
+    <pre><code>nmap -sV 192.168.1.1</code></pre>
+
+    <h2>Scan avec détection d’OS</h2>
+    <pre><code>nmap -O 192.168.1.1</code></pre>
+
+    <h2>Scan en mode furtif (SYN scan)</h2>
+    <pre><code>nmap -sS 192.168.1.1</code></pre>
+
+    <h2>Scan avec scripts NSE</h2>
+    <pre><code>nmap -sC -sV 192.168.1.1</code></pre>
+
+    <h2>Sortie vers un fichier</h2>
+    <pre><code>nmap -oN resultat.txt 192.168.1.1</code></pre>
+
+    <h2>Scan d’un sous-réseau entier</h2>
+    <pre><code>nmap 192.168.1.0/24</code></pre>
+
+    <h2>Scan rapide des ports les plus utilisés</h2>
+    <pre><code>nmap -F 192.168.1.1</code></pre>
+
+    <h2>Utiliser une interface spécifique</h2>
+    <pre><code>nmap -e tun0 192.168.1.1</code></pre>
+
+    <h2>Utiliser un fichier de ports personnalisés</h2>
+    <pre><code>nmap --top-ports 100 192.168.1.1</code></pre>
+  </main>
+
+  <footer>
+    <p>© 2025 iamtheroot – Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>

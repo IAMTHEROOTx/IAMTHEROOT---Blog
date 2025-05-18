@@ -470,3 +470,31 @@ nav {
   list-style: disc;
   padding-left: 2rem;
 }
+
+.category-section {
+  margin-bottom: 2.5rem;
+}
+
+.category-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0077cc;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.cheatsheet-list {
+  list-style-type: square;
+  padding-left: 2rem;
+}
+
+.cheatsheet-list li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cheatsheet-list li a:hover {
+  text-decoration: underline;
+  color: #0077cc;
+}
