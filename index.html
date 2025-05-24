@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -37,7 +37,7 @@
   
     <section class="post-list">
       <a href="0protection.html" class="post-card">
-        <!-- <img src="Capture d'écran 2025-05-08 120907.png" alt="Capture d'écran de l'analyse"> -->
+        <img src="Capture d'écran 2025-05-08 120907.png" alt="Capture d'écran de l'analyse">
         <h3>Root-me - ELF x86 - 0 protection</h3>
         <p>Reverse Engenering.</p>
       </a>
@@ -59,5 +59,107 @@
   </footer>
   
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>iamtheroot - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <body class="red-team">
+
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">IAMTHEROOT</a>
+    </div>
+    <div class="nav-right">
+      <a href="categories.html">Catégories</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+  </nav>
+
+  <!-- Section identité + liens sociaux -->
+  <header id="top">
+    <div class="identity">
+      <h2 class="pseudo">iamtheroot</h2>
+      <ul class="link-list">
+        <li><a href="https://www.linkedin.com/in/nolhan-dupalan/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.root-me.org/IAMTHEROOT" target="_blank">Root-Me</a></li>
+        <li><a href="https://github.com/IAMTHEROOTx" target="_blank">GitHub</a></li>
+        <li><a href="https://tryhackme.com/p/IAMTHEROOT" target="_blank">TryHackMe</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <h2>Cybersécurité : Mes Projets, Mes Défis, Ma Progression</h2>
+      <p>Bienvenue sur mon espace dédié à l'exploration de la cybersécurité, des réseaux et des systèmes. Vous y trouverez mes projets concrets : simulations d’attaques, 
+        analyses de logs, développement de scripts offensifs en Python, déploiement de honeypots ou encore configuration de pare-feux. Ce blog me sert de carnet de bord technique, 
+        mais aussi de vitrine de ma progression, de mes expérimentations et de ma passion pour la défense des systèmes d’information.</p>
+    </section>
+
+    <section id="categories">
+  <h1>All Categories</h1>
+
+  <div class="folder">
+    <h2 class="folder-header">Cheat Sheets</h2>
+    <div class="folder-content">
+      <ul>
+        <li><a href="linuxCS.html">Linux</a></li>
+        <li><a href="nmapCS.html">Nmap</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="folder">
+    <h2 class="folder-header">Write-ups</h2>
+    <div class="folder-content">
+      <h3>Root-me</h3>
+      <ul>
+        <li><a href="redirection-invalide.html">Root-me - Redirection-invalide</a></li>
+        <li><a href="wav-analysespectrale.html">Root-me - WAV - Analyse spectrale</a></li>
+        <li><a href="0protection.html">Root-me - ELF x86 - 0 protection</a></li>
+      </ul>
+      <h3>OverTheWire</h3>
+      <ul>
+        <li><a href="natas0.html">OverTheWire - natas0</a></li>
+        <li><a href="natas1.html">OverTheWire - natas1</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="folder">
+    <h2 class="folder-header">Projets</h2>
+    <div class="folder-content">
+      <ul>
+        <li><a href="#">Honeypot : Déploiement d’un serveur leurre</a></li>
+        <li><a href="#">Campagne de Phishing Simulée</a></li>
+        <li><a href="#">Programmation de Switchs ARUBA</a></li>
+        <li><a href="#">Docker : Gestion de Conteneurs</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 IAMTHEROOT – Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+      <script>
+  document.querySelectorAll('.folder-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const folder = header.parentElement;
+      folder.classList.toggle('open');
+    });
+  });
+</script>
 </body>
 </html>

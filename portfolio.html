@@ -1,181 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio – iamtheroot</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body.portfolio-page {
-      font-size: 1.2rem;
-      line-height: 1.8;
-      background-color: #0e0e0e;
-      color: #f0f0f0;
-    }
-
-    h2 {
-      color: #00ffd1;
-      margin-top: 2rem;
-      border-left: 4px solid #00ffd1;
-      padding-left: 0.75rem;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 2rem;
-    }
-
-    li {
-      margin: 0.5rem 0;
-    }
-
-    section p {
-      margin: 0.25rem 0 0.5rem;
-    }
-
-    .portfolio-header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: linear-gradient(120deg, #111, #1a1a1a);
-      border-bottom: 1px solid #222;
-    }
-
-    .portfolio-container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-
-    .portfolio-section {
-      margin-bottom: 3rem;
-    }
-
-    a {
-      color: #00ffd1;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Nolhan Dupalan, étudiant en cybersécurité">
+  <title>Portfolio de Nolhan Dupalan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="portfolio-page">
-
-  <!-- Barre de navigation -->
-  <nav>
+<body>
+  <body class="red-team"></body>
+  <!-- Navigation -->
+  <header>
+    <nav>
     <div class="nav-left">
       <a href="index.html">IAMTHEROOT</a>
     </div>
     <div class="nav-right">
-      <a href="categories.html">Catégories</a>
-      <a href="portfolio.html">Portfolio</a>
+      <a href="categories.html">Categories</a>
+      <input type="text" id="search-bar" placeholder="Rechercher..." onkeyup="searchContent()" />
     </div>
   </nav>
-
-  <!-- En-tête -->
-  <header class="portfolio-header">
-    <h1>Mon Portfolio</h1>
-    <p>Étudiant en cybersécurité à l'école 2600, passionné de sécurité offensive et de challenges techniques.</p>
   </header>
 
-  <!-- Contenu principal -->
-  <main class="portfolio-container">
+  <!-- Profil Section -->
+  <section id="profile" class="profile-section">
+    <h2>Profil</h2>
+    <p>
+      Étudiant en cybersécurité à l’école 2600, je suis à la recherche d’une alternance 
+      (2 semaines école / 4 semaines entreprise).
+      J’ai développé un home lab complet pour simuler des incidents, analyser des logs, déployer un honeypot, 
+      configurer un pare-feu et concevoir des malwares simulés en Python dans un cadre contrôlé. 
+      Je souhaite mettre ces compétences en pratique et contribuer activement à la sécurité d’un SI réel aux côtés d’un RSSI.
+    </p>
+  </section>
 
-    <section class="portfolio-section" id="formation">
-      <h2>Formation</h2>
-    
-      <div class="formation-bloc">
-        <div class="formation-header">
-          <a href="https://www.2600.eu/" target="_blank">
-            <img src="ecole2600_logo.jpg" alt="École 2600" class="logo-2600" />
-          </a>
-          <div>
-            <h3>Expert en Sécurité des Données, Réseaux & Systèmes</h3>
-            <p>École 2600, Paris (2025 – 2028)</p>
-          </div>
-        </div>
-    
-        <h4>Modules clés :</h4>
-        <ul>
-          <li><strong>Gouvernance :</strong> politiques de sécurité, évaluation des risques, conformité, conseil</li>
-          <li><strong>Blue Team :</strong> défense, détection, réponses aux incidents, confidentialité</li>
-          <li><strong>Red Team :</strong> pentesting, simulations d’attaque, évaluation de sécurité</li>
-          <li><strong>Purple Team :</strong> synergie Red/Blue, automatisation de détection, tests continus</li>
-          <li><strong>Menaces & Investigations :</strong> CTI, analyse des menaces, décisions stratégiques</li>
-        </ul>
-      </div>
-    
-      <div class="formation-bloc">
-        <h3>BTS Cybersécurité, Informatique & Réseaux</h3>
-        <p>Lycée Chevalier de Saint-Georges, Guadeloupe (2023 – 2025)</p>
-        <ul>
-          <li>Réseaux & Protocoles</li>
-          <li>Programmation C++ / Arduino</li>
-          <li>Mathématiques</li>
-        </ul>
-      </div>
-    
-      <div class="formation-bloc">
-        <h3>Jeune Sapeur-Pompier</h3>
-        <p>SDIS Guadeloupe (2017 – 2021)</p>
-        <ul>
-          <li>PSC1</li>
-          <li>Sauvetage en équipe</li>
-          <li>Incendie</li>
-        </ul>
-      </div>
-    </section>    
+  <!-- Formation Section -->
+  <section id="education" class="education-section">
+    <h2>Formation</h2>
+    <div class="card">
+      <h3>Auto-formation</h3>
+      <p><strong>Plateformes : </strong>ROOT-ME, HACKTHEBOX, PORTSWIGGER, TRYHACKME</p>
+      <p><strong>Durée : </strong>En cours</p>
+    </div>
 
-    <section class="portfolio-section" id="certifications">
-      <h2>Certifications</h2>
+    <div class="card">
+      <h3>Mastère Expert en Sécurité des Données – des Réseaux et des Systèmes</h3>
+      <p><strong>École : </strong>École 2600</p>
+      <p><strong>Dates : </strong>2025 – 2028</p>
+    </div>
+
+    <div class="card">
+      <h3>BTS Cybersécurité, Informatique et Réseaux – Electronique (CIEL IR)</h3>
+      <p><strong>Établissement : </strong>Lycée Chevalier de Saint-Georges</p>
+      <p><strong>Dates : </strong>2023 – 2025</p>
+    </div>
+  </section>
+
+  <!-- Compétences Section -->
+  <section id="skills" class="skills-section">
+    <h2>Compétences</h2>
+    <div class="card">
+      <h3>Systèmes & Réseaux</h3>
       <ul>
-        <li>CompTIA Security+ (en cours)</li>
-        <li>TryHackMe – SOC Level 1</li>
-        <li>TryHackMe – Jr Penetration Tester</li>
-        <li>TryHackMe – Web Fundamentals</li>
+        <li>OSI, TCP/IP, DNS, DHCP</li>
+        <li>Virtualisation (Cisco Packet Tracer)</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="portfolio-section" id="experience">
-      <h2>Expériences professionnelles</h2>
+    <div class="card">
+      <h3>Cybersécurité</h3>
       <ul>
-        <li><strong>Développeur C++ / Arduino</strong> – KOTE PISCINES (01/2025 – 05/2025)</li>
-        <p>Programmation de modules connectés.</p>
-
-        <li><strong>Stagiaire Administrateur Informatique</strong> – DGAC (05/2024 – 07/2024)</li>
-        <p>Supervision Linux/Windows, scripts Bash<br>rédaction de procédures<br>sécurité réseau (VPN, VLAN)<br>suivi des incidents.</p>
+        <li>Enumeration (Nmap, Gobuster)</li>
+        <li>Hacking Web (Burpsuite, OWASP)</li>
+        <li>Exploitation (Metasploit, Exegol, Netcat)</li>
+        <li>CTF player</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="portfolio-section" id="projets">
-      <h2>Projets</h2>
+    <div class="card">
+      <h3>Sécurité</h3>
       <ul>
-        <li>Honeypot – Déploiement d’un serveur leurre pour analyse d’intrusions</li>
-        <li>Campagne de phishing simulée – sensibilisation + reporting</li>
-        <li>Pare-feu pfSense – filtrage, NAT, VPN</li>
-        <li>Scripts Python & Bash – automatisation & détection</li>
-        <li>Conteneurisation avec Docker</li>
-        <li>Programmation de Switchs ARUBA</li>
+        <li>IDS/IPS, Snort, Splunk, Firewall, EDR, SIEM</li>
       </ul>
-    </section>
+    </div>
 
-    <section class="portfolio-section" id="liens">
-      <h2>Profils et réseaux</h2>
+    <div class="card">
+      <h3>Analyse de vulnérabilités</h3>
       <ul>
-        <li><a href="https://www.linkedin.com/in/nolhan-dupalan/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.root-me.org/IAMTHEROOT" target="_blank">Root-Me</a></li>
-        <li><a href="https://github.com/IAMTHEROOTx" target="_blank">GitHub</a></li>
-        <li><a href="https://tryhackme.com/p/IAMTHEROOT" target="_blank">TryHackMe</a></li>
+        <li>Nessus, Qualys, OpenVAS</li>
       </ul>
-    </section>
+    </div>
 
-  </main>
+    <div class="card">
+      <h3>Languages de programmation</h3>
+      <ul>
+        <li>Python, C, Bash</li>
+      </ul>
+    </div>
+  </section>
 
+  <!-- Langues Section -->
+  <section id="languages" class="languages-section">
+    <h2>Langues</h2>
+    <div class="card"></div>
+    <ul>
+      <li>Français (langue maternelle)</li>
+      <li>Anglais (C1)</li>
+    </ul>
+  </section>
+
+  <!-- Expériences Section -->
+  <section id="experience" class="experience-section">
+    <h2>Expériences Professionnelles</h2>
+    <div class="card">
+      <h3>Développeur Embarqué C++ / Arduino</h3>
+      <p><strong>Entreprise : </strong>Kote Piscines</p>
+      <p><strong>Dates : </strong>Février 2025 – Mai 2025</p>
+      <ul>
+        <li>Développement d’un système de nettoyage de piscine embarqué sur ESP32</li>
+        <li>Programmation en C++ dans l’environnement CodeWarrior et Arduino IDE</li>
+        <li>Intégration de capteurs à effet Hall et pilotage de vannes via RS485</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Stagiaire Administrateur Systèmes & Réseaux</h3>
+      <p><strong>Entreprise : </strong>DGAC</p>
+      <p><strong>Dates : </strong>Mai 2024 – Juillet 2024</p>
+      <ul>
+        <li>Supervision de systèmes Linux et Windows</li>
+        <li>Support utilisateurs (niveau 1) et configuration réseau (VLAN, VPN)</li>
+        <li>Rédaction de procédures techniques et découverte d’Active Directory</li>
+        <li>Participation à la gestion de la sécurité et au suivi des incidents</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projets Section -->
+  <section id="projects" class="projects-section">
+    <h2>Projets</h2>
+    <div class="card">
+      <h3>SOC Simulator & Home Lab</h3>
+      <p>Création d’un environnement de simulation d’incidents de sécurité avec focus sur la détection, l’analyse et la réponse aux menaces.</p>
+      <ul>
+        <li>Utilisation du framework MITRE ATT&CK, exploitation de logs Sysmon, création de dashboards Elastic</li>
+        <li>Déploiement d’un honeypot pour la collecte de logs et la détection d’activités anormales</li>
+        <li>Configuration d’un pare-feu pfSense avec des règles de filtrage, NAT, et politiques de sécurité</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Développement Python – Offensive & Détection</h3>
+      <p>Création de scripts offensifs utilisés pour tester les capacités de détection et de réaction dans un environnement simulé.</p>
+      <ul>
+        <li>Exploits Web : injections XSS, SQLi développées manuellement</li>
+        <li>Développement de malwares simulés (keylogger, ransomware, reverse shell)</li>
+        <li>Tests de détection avec exécution contrôlée des attaques pour observer la réaction des outils de sécurité</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact</h2>
+    <ul>
+      <li><strong>Numéro : </strong>+590 690143862</li>
+      <li><strong>Email : </strong><a href="mailto:nolhan.dupalan@ecole2600.com">nolhan.dupalan@ecole2600.com</a></li>
+      <li><strong>Localisation : </strong>Île-de-France, 78180 Montigny-le-Bretonneux</li>
+      <li><strong>Mobilité : </strong>Île-de-France</li>
+    </ul>
+    <p><a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | <a href="https://github.com" target="_blank">GitHub</a> | <a href="#">MyBlog</a> | <a href="https://www.root-me.org" target="_blank">Root-Me</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 IAMTHEROOT – Tous droits réservés</p>
+    <p>&copy; 2025 Nolhan Dupalan. Tous droits réservés.</p>
   </footer>
 
+  <script>
+    function searchContent() {
+      // Fonction de recherche pour filtrer les projets ou compétences
+      let input = document.getElementById("search-bar").value.toUpperCase();
+      let cards = document.querySelectorAll(".card");
+      
+      cards.forEach(function(card) {
+        let text = card.textContent || card.innerText;
+        if (text.toUpperCase().indexOf(input) > -1) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
