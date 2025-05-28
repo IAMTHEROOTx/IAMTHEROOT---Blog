@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>iamtheroot - Catégories</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <body class="red-team">
@@ -12,7 +12,6 @@
       <a href="index.html">IAMTHEROOT</a>
     </div>
     <div class="nav-right">
-      <a href="portfolio.html">Portfolio</a>
       <input type="text" id="search-bar" placeholder="Rechercher..." onkeyup="searchContent()" />
     </div>
   </nav>
@@ -21,47 +20,39 @@
     <section id="categories">
       <h1>All Categories</h1>
 
-      <!-- Dossier Cheat Sheets -->
       <div class="folder">
         <h2>Cheat Sheets</h2>
         <ul>
-          <li><a href="linuxCS.html">Linux</a></li>
-          <li><a href="nmapCS.html">Nmap</a></li>
+          <li><a href="pages/linuxCS.html">Linux</a></li>
+          <li><a href="pages/nmapCS.html">Nmap</a></li>
         </ul>
       </div>
-      
-      <!-- Dossier Write-ups -->
+
       <div class="folder">
         <h2>Write-ups</h2>
         <ul>
           <h2>Root-me</h2>
-          <li><a href="redirection-invalide.html">Root-me - Redirection-invalide</a></li>
-          <li><a href="wav-analysespectrale.html">Root-me - WAV - Analyse spectrale</a></li>
-          <li><a href="0protection.html">Root-me - ELF x86 - 0 protection</a></li>
+          <li><a href="pages/redirection-invalide.html">Root-me - Redirection-invalide</a></li>
+          <li><a href="pages/wav-analysespectrale.html">Root-me - WAV - Analyse spectrale</a></li>
+          <li><a href="pages/0protection.html">Root-me - ELF x86 - 0 protection</a></li>
           <h2>OverTheWire</h2>
-          <li><a href="natas0.html">OverTheWire - natas0</a></li>
-          <li><a href="natas1.html">OverTheWire - natas1</a></li>
+          <li><a href="pages/natas0.html">OverTheWire - natas0</a></li>
+          <li><a href="pages/natas1.html">OverTheWire - natas1</a></li>
         </ul>
       </div>
 
-      <!-- Dossier Projets -->
       <div class="folder">
         <h2>Projets</h2>
         <ul>
-          <li><a href="#">Honeypot : Déploiement d’un serveur leurre</a></li>
-          <li><a href="#">Campagne de Phishing Simulée</a></li>
-          <li><a href="#">Programmation de Switchs ARUBA</a></li>
-          <li><a href="#">Docker : Gestion de Conteneurs</a></li>
+          <li><a href="pages/tpot.html">Honeypot : Déploiement d’un serveur leurre</a></li>
         </ul>
       </div>
-
     </section>
   </main>
   
   <footer>
     <p>© 2025 IAMTHEROOT – Tous droits réservés</p>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

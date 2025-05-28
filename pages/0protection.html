@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Root-me - Cracking</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style/style.css">
   <style>
     main {
       max-width: 900px;
@@ -13,13 +13,13 @@
     }
 
     h1 {
-      color: #00ffd1;
+      color: #ffffff;
       font-size: 2rem;
       margin-bottom: 0.5rem;
     }
 
     .meta {
-      color: #888;
+      color: #444444;
       margin-bottom: 2rem;
     }
 
@@ -31,6 +31,7 @@
     }
 
     p {
+      /* color: #ffffff; */
       margin-bottom: 1.5rem;
       font-size: 1.1rem;
       line-height: 1.8;
@@ -47,54 +48,42 @@
 
     a.ctf-link {
       display: inline-block;
-      color: #00ffd1;
+      color: #0f0;
       font-weight: bold;
       text-decoration: none;
       margin-bottom: 2rem;
     }
 
     a.ctf-link:hover {
-      color: #fff;
+      color: #ff5100;
     }
   </style>
 </head>
 <body>
-
-  <!-- Navigation -->
+  <body class="red-team">
   <nav>
     <div class="nav-left">
-      <a href="index.html">IAMTHEROOT</a>
+      <a href="../index.html">IAMTHEROOT</a>
     </div>
     <div class="nav-right">
-      <a href="portfolio.html">Portfolio</a>
-      <a href="categories.html">Catégories</a>
+      <a href="../categories.html">Catégories</a>
     </div>
   </nav>
 
-  <!-- Contenu principal -->
   <main>
     <h1>Root-me - ELF x86 - 0 protection</h1>
     <div class="meta">Type : Write-up | Date : Mai 2025</div>
-
-    <a href="https://www.root-me.org/fr/Challenges/Web-Serveur/HTTP-Redirection-invalide" class="ctf-link" target="_blank">Voir le challenge</a>
-
-    <p>Ce challenge consistait à trouver un flag dans un programme compilé avec GCC32.</p>
-
-    <img src="Capture d'écran 2025-05-08 120907.png" alt="Capture d'écran de l'analyse">
-
-    <p>Du coup pour trouver le flag il suffit de décompiler le programme avec IDA ou avec un site web.<br>Après avoir fait quelques recherches j'ai trouvé un site web qui décompile des petits progrmmes pas trop complexes.</p>
+    <img src="../assets/Capture d'écran 2025-05-08 120907.png" alt="Capture d'écran de l'analyse">
+    <p>Pour trouver le flag il suffit de décompiler le programme avec IDA ou avec un site web.<br>
+    J"ai choisi un site web qui décompile des petits programmes pas trop complexes.</p>
     <p>Voici le site:</p>
     <pre>https://dogbolt.org/</pre><br>
-    <p>J'ai upload le .wav et j'ai obtenu le flag</p>
-
-    <img src="Capture d'écran 2025-05-08 120938.png" alt="Capture d'écran de l'analyse">
-    
-    
-    
-    <pre>Flag : 123456789</pre>
+    <p>J'ai upload le fichier j'ai examiné un peu le code et j'ai obtenu le flag</p>
+    <img src="../assets/Capture d'écran 2025-05-08 120938.png" alt="Capture d'écran de l'analyse">
+    <img src="../assets/Capture d'écran 2025-05-08 120946.png" alt="Capture d'écran de l'analyse">
+    <pre>Flag : ******</pre>
 
     <!-- <p>Une fois déchiffré, le flag était contenu dans un bloc lisible : <strong>FCSC{custom_crypto_can_be_fun}</strong></p> -->
-
     <!-- <img src="screenshots/flag-decrypted.png" alt="Flag trouvé"> -->
   </main>
 

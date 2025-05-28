@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>iamtheroot - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+
+    header, nav, footer {
+      background-color: #000;
+      padding: 1rem 0;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+    }
+
+    nav a:hover {
+      color: #ff6347;
+    }
+
+    header .identity {
+      text-align: center;
+    }
+
+    header .identity .pseudo {
+      font-size: 2rem;
+      color: #ff6347;
+    }
+
+    header .identity .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    header .identity .link-list li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+    header .identity .link-list a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    header .identity .link-list a:hover {
+      color: #ff6347;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    h2, h3 {
+      color: #ff6347;
+    }
+
+    section.intro {
+      margin-bottom: 2rem;
+    }
+
+    section.intro p {
+      font-size: 1.1rem;
+    }
+
+    .project-card, .experience-card, .education-card {
+      background-color: #333;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .project-card:hover, .experience-card:hover, .education-card:hover {
+      background-color: #444;
+    }
+
+    .project-card h3, .experience-card h3, .education-card h3 {
+      color: #ff6347;
+      margin: 0.5rem 0;
+    }
+
+    .project-card p, .experience-card p, .education-card p {
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      color: #fff;
+    }
+
+    #categories h1 {
+      text-align: center;
+      margin-top: 2rem;
+      color: #ff6347;
+    }
+  </style>
+</head>
+<body class="red-team">
+
+  <nav>
+    <div class="nav-left">
+      <a href="index.html">IAMTHEROOT</a>
+    </div>
+    <div class="nav-right">
+      <a href="categories.html">Catégories</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+  </nav>
+
+  <!-- Section identité + liens sociaux -->
+  <header id="top">
+    <div class="identity">
+      <h2 class="pseudo">iamtheroot</h2>
+      <ul class="link-list">
+        <li><a href="https://www.linkedin.com/in/nolhan-dupalan/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.root-me.org/IAMTHEROOT" target="_blank">Root-Me</a></li>
+        <li><a href="https://github.com/IAMTHEROOTx" target="_blank">GitHub</a></li>
+        <li><a href="https://tryhackme.com/p/IAMTHEROOT" target="_blank">TryHackMe</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="intro">
+      <h2>Portfolio - Mes Réalisations en Cybersécurité</h2>
+      <p>Bienvenue dans mon portfolio ! Découvrez ici quelques-uns de mes projets réalisés dans le domaine de la cybersécurité, des réseaux et des systèmes. Chaque projet représente une étape importante de ma progression et de mes apprentissages.</p>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects">
+      <h1>Projets</h1>
+
+      <div class="project-card">
+        <h3>Honeypot : Déploiement d’un serveur leurre</h3>
+        <p>Ce projet consiste à déployer un serveur honeypot afin de piéger des attaquants et de collecter des informations sur leurs techniques. L’objectif est d’analyser leurs comportements et d’adapter la défense.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Campagne de Phishing Simulée</h3>
+        <p>Dans ce projet, j’ai mis en place une campagne de phishing simulée pour sensibiliser des employés aux risques liés aux attaques par email et leur apprendre à détecter les menaces.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Programmation de Switchs ARUBA</h3>
+        <p>Ce projet a impliqué la programmation et la configuration de switchs ARUBA pour créer un réseau sécurisé et performant, en mettant l'accent sur la gestion des VLAN et des politiques de sécurité réseau.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Docker : Gestion de Conteneurs</h3>
+        <p>Ce projet m’a permis de gérer et déployer des applications dans des conteneurs Docker pour assurer l'isolation, la portabilité et la gestion des environnements de développement et de production.</p>
+      </div>
+    </section>
+
+    <!-- Section Expérience Professionnelle -->
+    <section id="experience">
+      <h1>Expérience Professionnelle</h1>
+
+      <div class="experience-card">
+        <h3>Analyste en Cybersécurité - XYZ Corp.</h3>
+        <p>De janvier 2023 à aujourd'hui – Mon rôle inclut l'analyse de vulnérabilités, l'élaboration de stratégies de défense et l'audit de sécurité des systèmes informatiques.</p>
+      </div>
+
+      <div class="experience-card">
+        <h3>Consultant en Sécurité Réseau - ABC Security</h3>
+        <p>De juin 2021 à décembre 2022 – J'ai travaillé sur la mise en place de pare-feu, la surveillance des intrusions, et la gestion des accès au sein d'entreprises clientes.</p>
+      </div>
+    </section>
+
+    <!-- Section Formations -->
+    <section id="education">
+      <h1>Formations</h1>
+
+      <div class="education-card">
+        <h3>Master en Cybersécurité - Université de Paris</h3>
+        <p>2021-2023 – Formation approfondie en sécurité des systèmes, cryptographie, et audit de sécurité des réseaux.</p>
+      </div>
+
+      <div class="education-card">
+        <h3>Bachelor en Informatique - Université de Lyon</h3>
+        <p>2018-2021 – Formation générale en informatique avec une spécialisation en réseaux et systèmes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 IAMTHEROOT – Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
